@@ -1,0 +1,119 @@
+/* header.css */
+
+header {
+  background-color: #af0505;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+header .nav-left {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+
+header .nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: 60px; /* Adjusted margin to push items to the right */
+}
+
+header li {
+  margin-right: 35px;
+  transition: 0.5s;
+  list-style: none;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+header li:hover {
+  color: #ff6347; /* Hover color */
+  cursor: pointer;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  margin-left: -25px;
+}
+
+.barIcon {
+  font-size: 25px;
+  background: none;
+  color: #fff;
+  display: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-left {
+    margin-left: 20px; /* Adjusted margin for smaller screens */
+  }
+
+  header .nav-right {
+    margin-right: 20px; /* Adjusted margin for smaller screens */
+  }
+
+  header .navbar {
+    position: absolute;
+    display: none;
+    background-color: #333;
+    left: 0;
+    top: 80px; /* Adjusted top position to account for header height */
+    width: 100%;
+    z-index: 5;
+    padding: 20px;
+  }
+
+  .barIcon {
+    display: block;
+  }
+
+  .navbar.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  header ul li {
+    margin-bottom: 10px;
+  }
+}
+
+body {
+  padding-top: 80px; /* Adjusted padding to account for fixed header */
+}

@@ -1,0 +1,57 @@
+.category-page {
+  padding: 20px;
+}
+
+.category-page h1 {
+  font-size: 1.5rem; /* Smaller heading size */
+  margin-bottom: 20px;
+  position: relative; /* Position relative for underline */
+  border-bottom: 2px solid #af0505; /* Red underline */
+  padding-bottom: 10px; /* Padding for spacing */
+  text-align: left; /* Left-align the heading */
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space out cards */
+  gap: 20px;
+}
+
+.news-card {
+  background-color: #fff;
+  border-radius: 0; /* No rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(25% - 20px); /* Adjust to fit 4 cards per line */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  /* Ensure cards align left-to-right even when not perfectly divisible by 4 */
+  flex: 1 1 calc(25% - 20px); /* Flexible width to accommodate uneven rows */
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.news-card {
+  padding: 20px; /* Added padding to ensure space around the text */
+  margin-top: 10px; /* Light margin before text starts */
+}
+
+.news-card h2 {
+  font-size: 1.2rem; /* Slightly smaller title */
+  margin-bottom: 10px;
+  text-align: left; /* Left-align the title */
+}
+
+.news-card p {
+  font-size: 0.9rem; /* Smaller font size for description */
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Left-align the description */
+  line-height: 1.4; /* Adjust line height for readability */
+}
